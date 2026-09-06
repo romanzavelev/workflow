@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="682a8f7c-c1d4-4aab-a08d-b68a60c66325">
+  <producedTypes>
+    <objectType typeId="771f9c66-43f4-4929-9381-269883fc2c5d" valueTypeId="1a4b5ae5-4264-4c89-a962-1733af587ce4"/>
+    <managerType typeId="bb70e750-93e3-4b5f-89cc-dd5cec76aa52" valueTypeId="a67079cf-717b-4756-9c6e-7f9c72f3811a"/>
+  </producedTypes>
+  <name>ЗаполнениеДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заполнение данных</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <forms uuid="16f5bb0e-5eaa-4bcc-835f-bf3b4ad8512a">
+    <name>ПараметрыЗаполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры заполнения</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2f3a4ab9-a630-4a7f-a765-76df12a0408d">
+    <name>ДобавлениеТекста</name>
+    <synonym>
+      <key>ru</key>
+      <value>Добавление текста</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

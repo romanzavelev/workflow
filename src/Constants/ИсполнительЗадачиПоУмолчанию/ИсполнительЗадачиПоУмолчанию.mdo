@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ecb5ad10-2444-4be8-969e-0f5fa70d77c2">
+  <producedTypes>
+    <managerType typeId="9e911574-ba8b-4757-b21f-b60f6ccab0b4" valueTypeId="7e684764-7c7f-4a8f-946e-7a631e9e03e1"/>
+    <valueManagerType typeId="b0858a97-38fe-47c1-bd56-c0a0c669d356" valueTypeId="fad5ea21-b321-4381-991f-ed6cd560b230"/>
+    <valueKeyType typeId="593f7a17-612d-5165-9454-30524d68e3df" valueTypeId="0ecba1af-77d9-5a71-87b7-e17e19116898"/>
+  </producedTypes>
+  <name>ИсполнительЗадачиПоУмолчанию</name>
+  <synonym>
+    <key>ru</key>
+    <value>Исполнитель задачи по умолчанию</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.Пользователи</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

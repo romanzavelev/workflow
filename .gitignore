@@ -1,0 +1,57 @@
+# ===================== 1C:EDT project =====================
+
+# ---- Скомпилированные артефакты (EDT хранит исходник в XML/BSL,
+#      бинарники — это результат сборки/экспорта, в git не нужны) ----
+*.cf
+*.cfe
+*.epf
+*.erf
+*.dt
+*.dtx
+*.1CD
+*.1cd
+
+# ---- Локальная база (если по неосторожности лежит рядом с проектом) ----
+1Cv8.1CD
+*.lck
+*.lock
+
+# ---- Блокировка репозитория конфигурации / рабочие файлы EDT ----
+RepositoryLock
+*.launch
+bin/
+gen/
+
+# ---- Eclipse-специфичные файлы проекта ----
+# .project обычно нужен для импорта проекта в EDT — не игнорируем.
+# А вот локальные пользовательские настройки — игнорируем:
+.settings/org.eclipse.core.resources.prefs
+.settings/org.eclipse.jdt.*
+.metadata/
+.recommenders/
+.classpath
+
+# ---- Временные/бэкап файлы ----
+~$*
+*.bak
+*.~*
+ComparisonResult*.mxl
+*.mxl
+
+# ---- Файлы подключения к ИБ (может содержать логин/пароль) ----
+*.v8i
+
+# ---- OneScript / vanessa-runner / тесты, если используете ----
+tmp/
+out/
+logs/
+allure-results/
+*.log
+
+# ---- IDE и ОС-мусор ----
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+desktop.ini

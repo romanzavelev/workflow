@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="01f6fd4b-1534-4e1d-b754-abe8abfb4080">
+  <name>ОтметкиВремени</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отметки времени</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>DefinedType.СсылкиДляОтметокВремени</content>
+  <content>CommonModule.ОтметкиВремени</content>
+  <content>CommonModule.ОтметкиВремениСобытия</content>
+  <content>EventSubscription.ОтметкиВремениПередУдалениемСсылочныхОбъектов</content>
+  <content>EventSubscription.ОтметкиВремениПриЗаписиСсылочныхОбъектов</content>
+  <parentSubsystem>Subsystem.НастройкаИАдминистрирование</parentSubsystem>
+</mdclass:Subsystem>

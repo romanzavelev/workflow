@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5147a977-95f2-465e-9973-1840a360bbc7">
+  <producedTypes>
+    <managerType typeId="ef4897c3-d861-4c87-a676-37c99a72853a" valueTypeId="410ae8ac-c5de-475a-a6bb-ff2b8093c214"/>
+    <valueManagerType typeId="ccf6de76-714d-4c01-b28e-1951319a5e99" valueTypeId="fe17e06e-a11a-4349-b2c2-a06dd724e719"/>
+    <valueKeyType typeId="79a42f4c-3901-5498-8cc6-243145eb3bf7" valueTypeId="ffe50282-b106-5d07-ac8b-b6b5eb6edb01"/>
+  </producedTypes>
+  <name>АдресатСистемыПоддержки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Адресат системы поддержки</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.АдресатыПочтовыхСообщений</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

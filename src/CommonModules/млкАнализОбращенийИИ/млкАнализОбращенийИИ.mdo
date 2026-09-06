@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="80dc5091-6ec0-4f8b-87b7-3531e9cc82c3">
+  <name>млкАнализОбращенийИИ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Млк анализ обращений ИИ</value>
+  </synonym>
+  <server>true</server>
+</mdclass:CommonModule>

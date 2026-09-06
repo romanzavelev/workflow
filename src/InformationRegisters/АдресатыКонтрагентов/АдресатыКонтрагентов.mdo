@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="aac07bc8-09a9-42de-9723-a7ac5d998c15">
+  <producedTypes>
+    <selectionType typeId="1a2b8e85-44a0-4b8f-8127-e7747d78e845" valueTypeId="b76699d5-8f1b-4c61-b12c-c87e0bd2cda8"/>
+    <listType typeId="7a69aab9-6b4b-4fb0-ad53-5d92f09eef1a" valueTypeId="e9765d0e-2aa0-40e4-bbd5-310be08b7c4e"/>
+    <managerType typeId="4a59ccb3-369d-4085-a720-c87a6e083b54" valueTypeId="7d1ef769-b9f1-4bad-8d80-f5c7e32529fe"/>
+    <recordSetType typeId="18d3c729-d74a-4a16-941a-f30f0532fb9d" valueTypeId="77142d23-3868-48ce-87cc-5a6382cbe75d"/>
+    <recordKeyType typeId="ff76a9b7-95c4-49c6-b9f9-9161c97d020c" valueTypeId="1488a262-5d08-4a20-a64e-cc44b06596df"/>
+    <recordType typeId="dca64993-9891-4f57-8edc-30c0fc7bb3f2" valueTypeId="66aa9c1f-77c3-498f-83fb-8b063c9d3c73"/>
+    <recordManagerType typeId="1cdd79b6-6029-40ff-a909-8c95a8dbd301" valueTypeId="5d90a4ef-b5f6-4eea-8875-5c59ca7f8e6d"/>
+  </producedTypes>
+  <name>АдресатыКонтрагентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Адресаты контрагентов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="365d835e-b657-4711-8385-db92fa36cbb5">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d585c9f8-bf61-4065-a1a2-b22c83889282">
+    <name>Адресат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адресат</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>
