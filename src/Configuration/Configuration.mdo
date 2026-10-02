@@ -4585,7 +4585,6 @@
   <constants>Constant.ЭтоАвтономноеРабочееМесто</constants>
   <constants>Constant.ЯвляетсяСерверомСВД</constants>
   <constants>Constant.ЯзыкРаспознавания</constants>
-  <constants>Constant.Константа1</constants>
   <commonForms>CommonForm.АвтономнаяРабота</commonForms>
   <commonForms>CommonForm.АвтономнаяРаботаВМоделиСервиса</commonForms>
   <commonForms>CommonForm.АдресУчастникаОбменаЭД</commonForms>
