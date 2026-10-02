@@ -1,0 +1,5 @@
+{
+  "mcpServers": {
+    "rlm-tools-bsl": { "type": "stdio", "command": "rlm-tools-bsl", "args": [] }
+  }
+}
