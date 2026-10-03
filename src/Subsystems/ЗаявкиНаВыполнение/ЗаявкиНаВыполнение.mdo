@@ -24,7 +24,6 @@
   <content>CommonModule.млкПодпискиНаСобытия</content>
   <content>DataProcessor.expert1cОбработкаЗаявок</content>
   <content>Catalog.expert1cУчастникиПортала</content>
-  <content>Constant.expert1cКонтрагентПортала</content>
   <content>Constant.expert1cАдресПортала</content>
   <content>CommonModule.expert1cПорталЗаявок</content>
   <content>CommonModule.expert1cПорталЗаявокСтраница</content>

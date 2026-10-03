@@ -134,6 +134,28 @@
     <type>
       <types>CatalogRef.Контрагенты</types>
     </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Подбирается автоматически по названию организации. Если не найден, сотрудник выбирает вручную: заявки участника заполнятся этим контрагентом.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c4e2b186-018d-4dda-a5f7-eec46f4e4285">
+    <name>НазваниеОрганизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Название организации (как указал пользователь)</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>

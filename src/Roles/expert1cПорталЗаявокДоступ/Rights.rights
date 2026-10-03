@@ -11,13 +11,6 @@
 		</right>
 	</object>
 	<object>
-		<name>HTTPService.expert1cПорталЗаявок.URLTemplate.Организации.Method.GET</name>
-		<right>
-			<name>Use</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>HTTPService.expert1cПорталЗаявок.URLTemplate.Регистрация.Method.POST</name>
 		<right>
 			<name>Use</name>

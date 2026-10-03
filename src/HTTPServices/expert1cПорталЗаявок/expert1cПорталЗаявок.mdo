@@ -24,22 +24,6 @@
       <handler>СтраницаGET</handler>
     </methods>
   </urlTemplates>
-  <urlTemplates uuid="ca721aca-22c8-4166-855e-e1ab0d7a7d10">
-    <name>Организации</name>
-    <synonym>
-      <key>ru</key>
-      <value>Организации</value>
-    </synonym>
-    <template>/api/organizations</template>
-    <methods uuid="fefd7d16-241e-40a5-bf3e-25719ffce01a">
-      <name>GET</name>
-      <synonym>
-        <key>ru</key>
-        <value>GET</value>
-      </synonym>
-      <handler>ОрганизацииGET</handler>
-    </methods>
-  </urlTemplates>
   <urlTemplates uuid="bca251e5-19fa-4a5a-ad11-50255b08f242">
     <name>Регистрация</name>
     <synonym>

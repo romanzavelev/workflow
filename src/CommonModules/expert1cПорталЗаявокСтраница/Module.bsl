@@ -86,7 +86,7 @@
 	|<form id='f-reg' hidden>
 	|<label for='r-name'>Ваше имя</label><input id='r-name' autocomplete='name' required maxlength='100'>
 	|<label for='r-email'>Электронная почта (будет вашим логином)</label><input id='r-email' type='email' autocomplete='email' required maxlength='100'>
-	|<div id='r-org-box' hidden><label for='r-org'>Организация</label><select id='r-org'></select></div>
+	|<label for='r-org'>Название вашей организации</label><input id='r-org' autocomplete='organization' required maxlength='150' placeholder='Например: ООО Ромашка'>
 	|<p class='muted'>Мы отправим на этот адрес письмо со ссылкой. По ней вы подтвердите почту и зададите пароль.</p>
 	|<div class='row'><button type='submit'>Зарегистрироваться</button></div>
 	|</form>
@@ -211,19 +211,10 @@
 	|}
 	|$('b-back').onclick=showList;
 	|
-	|function loadOrgs(){
-	| api('GET','organizations').then(function(r){
-	|  if(!r.ok||!r.data.organizations)return;
-	|  var s=$('r-org');clear(s);
-	|  r.data.organizations.forEach(function(o){var op=el('option',null,o.name);op.value=o.id;s.appendChild(op)});
-	|  $('r-org-box').hidden=r.data.organizations.length<2})
-	|}
-	|
 	|var q=new URLSearchParams(location.search);
 	|if(q.get('token')){setToken(null);views('v-pass')}
 	|else if(T){showList()}
 	|else{showAuth()}
-	|loadOrgs();
 	|})();
 	|</script>
 	|</body>
