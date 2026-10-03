@@ -209,6 +209,32 @@
     </backColor>
     <representationInContextMenu>Auto</representationInContextMenu>
   </items>
+  <items xsi:type="form:Button">
+    <name>ВернутьИсполнителя</name>
+    <id>15</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>ВернутьИсполнителяРасширеннаяПодсказка</name>
+      <id>16</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualButton</type>
+    <commandName>Form.Command.ВернутьИсполнителя</commandName>
+    <representation>Auto</representation>
+    <autoMaxWidth>true</autoMaxWidth>
+    <autoMaxHeight>true</autoMaxHeight>
+    <placementArea>UserCmds</placementArea>
+    <representationInContextMenu>Auto</representationInContextMenu>
+  </items>
   <autoCommandBar>
     <name>ФормаКоманднаяПанель</name>
     <id>-1</id>
@@ -257,6 +283,27 @@
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
         <name>ОбработатьЗаявки</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ВернутьИсполнителя</name>
+    <title>
+      <key>ru</key>
+      <value>Вернуть исполнителя по заявкам с ответом</value>
+    </title>
+    <id>2</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Вернуть исполнителя в заявки, по которым в закладке Письма больше одного письма</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ВернутьИсполнителя</name>
       </handler>
     </action>
     <currentRowUse>Auto</currentRowUse>
