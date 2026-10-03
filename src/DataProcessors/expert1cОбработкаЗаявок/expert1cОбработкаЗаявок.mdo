@@ -15,14 +15,14 @@
     <name>Исполнитель</name>
     <synonym>
       <key>ru</key>
-      <value>Исполнитель (отбор)</value>
+      <value>Исполнитель (отбор по колонке «Исполнитель» списка заявок)</value>
     </synonym>
     <type>
       <types>CatalogRef.Пользователи</types>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Заявки с этим исполнителем будут обработаны. По умолчанию — Завелев Роман Ильич.</value>
+      <value>Заявки с этим исполнителем (реквизит адресации) будут обработаны. По умолчанию — Завелев Роман Ильич.</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

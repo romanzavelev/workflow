@@ -9,7 +9,7 @@
     <id>1</id>
     <title>
       <key>ru</key>
-      <value>Исполнитель (отбор)</value>
+      <value>Исполнитель (отбор по колонке «Исполнитель» списка заявок)</value>
     </title>
     <visible>true</visible>
     <enabled>true</enabled>
