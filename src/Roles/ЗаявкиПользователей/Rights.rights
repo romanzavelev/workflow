@@ -85,6 +85,17 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.expert1cОбработкаЗаявок</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.СправкиСПАРКРискиПрисоединенныеФайлы</name>
 		<right>
 			<name>Read</name>
