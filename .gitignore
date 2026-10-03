@@ -1,2 +1,3 @@
 designer.log
 *.jar
+src/Configuration/ParentConfigurations/*.cf
