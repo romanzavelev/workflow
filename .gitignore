@@ -1,3 +1,17 @@
 designer.log
 *.jar
-src/Configuration/ParentConfigurations/*.cf
+# EDT / Eclipse служебное
+.metadata/
+.settings/
+/bin/
+*.tmp
+# Служебные файлы выгрузки
+DumpFilesIndex.txt
+ConfigDumpInfo.xml
+# Конфигурации поставщика (слепки)
+src/Configuration/ParentConfigurations.bin
+src/Configuration/ParentConfigurations/
+# Локальные базы и кэш
+*.1CD
+*.CD
+*.dt.bak
