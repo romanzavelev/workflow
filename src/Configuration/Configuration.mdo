@@ -4436,7 +4436,7 @@
   <constants>Constant.МаксимальныйРазмерВложенийВУведомленииНовойЗадачи</constants>
   <constants>Constant.АдресатСистемыПоддержки</constants>
   <constants>Constant.ИсполнительЗадачиПоУмолчанию</constants>
-  <constants>Constant.expert1cОрганизацияПортала</constants>
+  <constants>Constant.expert1cКонтрагентПортала</constants>
   <constants>Constant.expert1cАдресПортала</constants>
   <constants>Constant.УчетнаяЗаписьПоддержки</constants>
   <constants>Constant.МаксимальныйРазмерВнешнегоИсходящегоПисьма</constants>

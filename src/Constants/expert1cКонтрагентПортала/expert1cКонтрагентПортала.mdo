@@ -5,13 +5,13 @@
     <valueManagerType typeId="443b3051-cafd-40b3-92e0-1a07d1a88227" valueTypeId="290e5e95-5b1a-4c6f-99a9-a9ab5d34fe53"/>
     <valueKeyType typeId="922a0b91-d540-47cf-8cc6-fbb2a33410cc" valueTypeId="f40e91d7-78d4-41ad-a53c-642e7f1590fb"/>
   </producedTypes>
-  <name>expert1cОрганизацияПортала</name>
+  <name>expert1cКонтрагентПортала</name>
   <synonym>
     <key>ru</key>
-    <value>Организация портала заявок (по умолчанию)</value>
+    <value>Контрагент портала заявок (по умолчанию)</value>
   </synonym>
   <type>
-    <types>CatalogRef.Организации</types>
+    <types>CatalogRef.Контрагенты</types>
   </type>
   <useStandardCommands>true</useStandardCommands>
   <minValue xsi:type="core:UndefinedValue"/>

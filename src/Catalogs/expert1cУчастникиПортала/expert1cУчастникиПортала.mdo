@@ -126,13 +126,13 @@
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="744437e8-1ee2-439f-bc08-e06d3c666763">
-    <name>Организация</name>
+    <name>Контрагент</name>
     <synonym>
       <key>ru</key>
-      <value>Организация</value>
+      <value>Контрагент</value>
     </synonym>
     <type>
-      <types>CatalogRef.Организации</types>
+      <types>CatalogRef.Контрагенты</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
