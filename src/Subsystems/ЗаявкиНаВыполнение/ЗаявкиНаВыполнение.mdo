@@ -22,4 +22,5 @@
   <content>InformationRegister.АдресатыКонтрагентов</content>
   <content>InformationRegister.ИсторияЗаявокНаВыполнение</content>
   <content>CommonModule.млкПодпискиНаСобытия</content>
+  <content>DataProcessor.expert1cОбработкаЗаявок</content>
 </mdclass:Subsystem>

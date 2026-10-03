@@ -5850,6 +5850,7 @@
   <dataProcessors>DataProcessor.ФайлыБТС</dataProcessors>
   <dataProcessors>DataProcessor.ЭлектронноеВзаимодействие</dataProcessors>
   <dataProcessors>DataProcessor.ЗаполнениеДанных</dataProcessors>
+  <dataProcessors>DataProcessor.expert1cОбработкаЗаявок</dataProcessors>
   <informationRegisters>InformationRegister.HTMLПредставленияСодержанияПисем</informationRegisters>
   <informationRegisters>InformationRegister.АбонентыЭДО</informationRegisters>
   <informationRegisters>InformationRegister.АвтоматическиеОтветыПоАдресам</informationRegisters>
