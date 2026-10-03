@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="490d2604-efd7-4f5c-afd2-89d2f9080e10">
+  <name>expert1cПорталЗаявокДоступ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Портал заявок (доступ к HTTP-сервису)</value>
+  </synonym>
+</mdclass:Role>

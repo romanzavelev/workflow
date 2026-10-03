@@ -1777,6 +1777,7 @@
   <roles>Role.ЧтениеФизическихЛиц</roles>
   <roles>Role.ЧтениеЭД</roles>
   <roles>Role.ЗаявкиПользователей</roles>
+  <roles>Role.expert1cПорталЗаявокДоступ</roles>
   <commonTemplates>CommonTemplate.fresh</commonTemplates>
   <commonTemplates>CommonTemplate.ВставкаИзображенияВместоТегаВDocx</commonTemplates>
   <commonTemplates>CommonTemplate.ВставкаИзображенияЭПСУказаниемПоложенияDocx</commonTemplates>
@@ -2462,6 +2463,8 @@
   <commonModules>CommonModule.ОперацииСФайламиЭДКО</commonModules>
   <commonModules>CommonModule.ОперацииСФайламиЭДКОВызовСервера</commonModules>
   <commonModules>CommonModule.млкПодпискиНаСобытия</commonModules>
+  <commonModules>CommonModule.expert1cПорталЗаявок</commonModules>
+  <commonModules>CommonModule.expert1cПорталЗаявокСтраница</commonModules>
   <commonModules>CommonModule.ОперацииСФайламиЭДКОГлобальный</commonModules>
   <commonModules>CommonModule.ОперацииСФайламиЭДКОКлиент</commonModules>
   <commonModules>CommonModule.ОперацииСФайламиЭДКОСлужебный</commonModules>
@@ -3391,6 +3394,7 @@
   <httpServices>HTTPService.MobileApp</httpServices>
   <httpServices>HTTPService.ПередачаДанных</httpServices>
   <httpServices>HTTPService.ЭДО</httpServices>
+  <httpServices>HTTPService.expert1cПорталЗаявок</httpServices>
   <wsReferences>WSReference.WSСборОтчетностиРосстата</wsReferences>
   <eventSubscriptions>EventSubscription.АвтономнаяРаботаПроверитьВозможностьЗаписиОбщихДанных</eventSubscriptions>
   <eventSubscriptions>EventSubscription.АвтономнаяРаботаПроверитьВозможностьЗаписиОбщихДанныхДокумент</eventSubscriptions>
@@ -4432,6 +4436,8 @@
   <constants>Constant.МаксимальныйРазмерВложенийВУведомленииНовойЗадачи</constants>
   <constants>Constant.АдресатСистемыПоддержки</constants>
   <constants>Constant.ИсполнительЗадачиПоУмолчанию</constants>
+  <constants>Constant.expert1cОрганизацияПортала</constants>
+  <constants>Constant.expert1cАдресПортала</constants>
   <constants>Constant.УчетнаяЗаписьПоддержки</constants>
   <constants>Constant.МаксимальныйРазмерВнешнегоИсходящегоПисьма</constants>
   <constants>Constant.МаксимальныйРазмерФайла</constants>
@@ -4990,6 +4996,7 @@
   <catalogs>Catalog.СеансыСвязиСКонтролирующимиОрганами</catalogs>
   <catalogs>Catalog.СерверныеСообщенияСВД</catalogs>
   <catalogs>Catalog.СтатусЗадачНаВыполнение</catalogs>
+  <catalogs>Catalog.expert1cУчастникиПортала</catalogs>
   <catalogs>Catalog.СерверыДокументооборота</catalogs>
   <catalogs>Catalog.СертификатыКлючейЭлектроннойПодписиИШифрования</catalogs>
   <catalogs>Catalog.СканированныеДокументыДляПередачиВЭлектронномВиде</catalogs>

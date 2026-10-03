@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="21996d55-6abb-40b2-90d4-d7f40bbe3c05">
+  <producedTypes>
+    <managerType typeId="da7b2601-ace4-4652-94fa-2e25052fefb6" valueTypeId="4b7cf190-b1b3-43ef-8e11-248604038223"/>
+    <valueManagerType typeId="443b3051-cafd-40b3-92e0-1a07d1a88227" valueTypeId="290e5e95-5b1a-4c6f-99a9-a9ab5d34fe53"/>
+    <valueKeyType typeId="922a0b91-d540-47cf-8cc6-fbb2a33410cc" valueTypeId="f40e91d7-78d4-41ad-a53c-642e7f1590fb"/>
+  </producedTypes>
+  <name>expert1cОрганизацияПортала</name>
+  <synonym>
+    <key>ru</key>
+    <value>Организация портала заявок (по умолчанию)</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.Организации</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>
