@@ -1778,6 +1778,7 @@
   <roles>Role.ЧтениеЭД</roles>
   <roles>Role.ЗаявкиПользователей</roles>
   <roles>Role.expert1cПорталЗаявокДоступ</roles>
+  <roles>Role.expert1cСозданиеЗадачНаВыполнение</roles>
   <commonTemplates>CommonTemplate.fresh</commonTemplates>
   <commonTemplates>CommonTemplate.ВставкаИзображенияВместоТегаВDocx</commonTemplates>
   <commonTemplates>CommonTemplate.ВставкаИзображенияЭПСУказаниемПоложенияDocx</commonTemplates>
