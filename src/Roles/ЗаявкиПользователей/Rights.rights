@@ -74,7 +74,7 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ЗаполнениеДанных</name>
+		<name>DataProcessor.expert1cОбработкаЗаявок</name>
 		<right>
 			<name>Use</name>
 			<value>true</value>
@@ -85,7 +85,7 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.expert1cОбработкаЗаявок</name>
+		<name>DataProcessor.ЗаполнениеДанных</name>
 		<right>
 			<name>Use</name>
 			<value>true</value>
@@ -103,6 +103,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.ВидыРабот</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.СканированныеДокументыДляПередачиВЭлектронномВидеПрисоединенныеФайлы</name>
 		<right>
 			<name>Read</name>
@@ -111,6 +122,17 @@
 	</object>
 	<object>
 		<name>Constant.УчетнаяЗаписьПоддержки</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Пользователи</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
@@ -334,28 +356,6 @@
 		<name>Catalog.ТранспортноеСообщениеПрисоединенныеФайлы</name>
 		<right>
 			<name>Read</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.ВидыРабот</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.Пользователи</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>

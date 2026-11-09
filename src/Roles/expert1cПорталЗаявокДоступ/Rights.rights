@@ -4,14 +4,7 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
-		<name>HTTPService.expert1cПорталЗаявок.URLTemplate.Страница.Method.GET</name>
-		<right>
-			<name>Use</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>HTTPService.expert1cПорталЗаявок.URLTemplate.Регистрация.Method.POST</name>
+		<name>HTTPService.expert1cПорталЗаявок.URLTemplate.Вход.Method.POST</name>
 		<right>
 			<name>Use</name>
 			<value>true</value>
@@ -25,7 +18,21 @@
 		</right>
 	</object>
 	<object>
-		<name>HTTPService.expert1cПорталЗаявок.URLTemplate.Вход.Method.POST</name>
+		<name>HTTPService.expert1cПорталЗаявок.URLTemplate.Заявки.Method.POST</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>HTTPService.expert1cПорталЗаявок.URLTemplate.Страница.Method.GET</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>HTTPService.expert1cПорталЗаявок.URLTemplate.Заявка.Method.GET</name>
 		<right>
 			<name>Use</name>
 			<value>true</value>
@@ -39,14 +46,7 @@
 		</right>
 	</object>
 	<object>
-		<name>HTTPService.expert1cПорталЗаявок.URLTemplate.Заявки.Method.POST</name>
-		<right>
-			<name>Use</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>HTTPService.expert1cПорталЗаявок.URLTemplate.Заявка.Method.GET</name>
+		<name>HTTPService.expert1cПорталЗаявок.URLTemplate.Регистрация.Method.POST</name>
 		<right>
 			<name>Use</name>
 			<value>true</value>
