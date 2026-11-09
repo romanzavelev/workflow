@@ -2622,5 +2622,9 @@
       <event>OnReadAtServer</event>
       <name>ПриЧтенииНаСервере</name>
     </handlers>
+    <handlers>
+      <event>BeforeWrite</event>
+      <name>ПередЗаписью</name>
+    </handlers>
   </extInfo>
 </form:Form>
