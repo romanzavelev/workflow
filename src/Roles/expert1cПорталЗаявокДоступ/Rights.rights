@@ -52,4 +52,46 @@
 			<value>true</value>
 		</right>
 	</object>
+	<object>
+		<name>HTTPService.expert1cПорталЗаявок.URLTemplate.МаксСтарт.Method.POST</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>HTTPService.expert1cПорталЗаявок.URLTemplate.МаксОпрос.Method.POST</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>HTTPService.expert1cПорталЗаявок.URLTemplate.МаксПривязка.Method.POST</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>HTTPService.expert1cПорталЗаявок.URLTemplate.МаксВебхук.Method.POST</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>HTTPService.expert1cПорталЗаявок.URLTemplate.Профиль.Method.GET</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>HTTPService.expert1cПорталЗаявок.URLTemplate.Организация.Method.POST</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+	</object>
 </Rights>

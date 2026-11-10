@@ -360,4 +360,23 @@
     <fullTextSearch>DontUse</fullTextSearch>
     <dataHistory>DontUse</dataHistory>
   </attributes>
+  <attributes uuid="f6b6134f-d045-4ee1-8110-c5fdbfc52d42">
+    <name>МаксИд</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор пользователя MAX</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>24</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>DontUse</fullTextSearch>
+    <dataHistory>DontUse</dataHistory>
+  </attributes>
 </mdclass:Catalog>

@@ -116,4 +116,105 @@
       <handler>ЗаявкаGET</handler>
     </methods>
   </urlTemplates>
+  <urlTemplates uuid="7ef47133-4b76-4c49-b0ad-325da17108ae">
+    <name>МаксСтарт</name>
+    <synonym>
+      <key>ru</key>
+      <value>MAX: начать вход</value>
+    </synonym>
+    <template>/api/max/start</template>
+    <methods uuid="0f604e2c-15ec-4116-985b-db87d12afbb7">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>МаксСтартPOST</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="15b3d220-c519-42fe-978a-54b3156b3c00">
+    <name>МаксОпрос</name>
+    <synonym>
+      <key>ru</key>
+      <value>MAX: опрос входа</value>
+    </synonym>
+    <template>/api/max/poll</template>
+    <methods uuid="2a9973db-a776-4e20-b813-3ef5efa76f4a">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>МаксОпросPOST</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="9d8f424f-e6a1-4d48-a2ac-656ae22116ec">
+    <name>МаксПривязка</name>
+    <synonym>
+      <key>ru</key>
+      <value>MAX: привязка аккаунта</value>
+    </synonym>
+    <template>/api/max/link</template>
+    <methods uuid="c37561af-2562-4cee-8e09-0c140acc6086">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>МаксПривязкаPOST</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="eec5a1e1-47e7-417d-be57-62dcaeee3c37">
+    <name>МаксВебхук</name>
+    <synonym>
+      <key>ru</key>
+      <value>MAX: вебхук событий</value>
+    </synonym>
+    <template>/api/max/webhook</template>
+    <methods uuid="47beb269-c45f-4e4f-a607-3cfb1be98b44">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>МаксВебхукPOST</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="62d181b2-36f9-4eee-b40d-df34869ed783">
+    <name>Профиль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Профиль участника</value>
+    </synonym>
+    <template>/api/me</template>
+    <methods uuid="8e092d5c-3f51-4569-9064-7b0cdf2f150d">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>ПрофильGET</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="8820dbf6-ecc1-4694-9f7a-7b21e71f7741">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация участника</value>
+    </synonym>
+    <template>/api/organization</template>
+    <methods uuid="d820289b-0c32-4339-ba1c-47eb324cc610">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>ОрганизацияPOST</handler>
+    </methods>
+  </urlTemplates>
 </mdclass:HTTPService>

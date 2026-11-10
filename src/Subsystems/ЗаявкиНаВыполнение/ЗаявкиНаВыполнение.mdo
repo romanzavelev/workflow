@@ -27,5 +27,9 @@
   <content>Constant.expert1cАдресПортала</content>
   <content>CommonModule.expert1cПорталЗаявок</content>
   <content>CommonModule.expert1cПорталЗаявокСтраница</content>
+  <content>CommonModule.expert1cПорталЗаявокМакс</content>
+  <content>Constant.expert1cМаксНикБота</content>
+  <content>Constant.expert1cМаксТокенБота</content>
+  <content>Constant.expert1cМаксСекретВебхука</content>
   <content>HTTPService.expert1cПорталЗаявок</content>
 </mdclass:Subsystem>

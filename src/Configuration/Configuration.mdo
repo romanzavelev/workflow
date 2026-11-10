@@ -2466,6 +2466,7 @@
   <commonModules>CommonModule.млкПодпискиНаСобытия</commonModules>
   <commonModules>CommonModule.expert1cПорталЗаявок</commonModules>
   <commonModules>CommonModule.expert1cПорталЗаявокСтраница</commonModules>
+  <commonModules>CommonModule.expert1cПорталЗаявокМакс</commonModules>
   <commonModules>CommonModule.ОперацииСФайламиЭДКОГлобальный</commonModules>
   <commonModules>CommonModule.ОперацииСФайламиЭДКОКлиент</commonModules>
   <commonModules>CommonModule.ОперацииСФайламиЭДКОСлужебный</commonModules>
@@ -4438,6 +4439,9 @@
   <constants>Constant.АдресатСистемыПоддержки</constants>
   <constants>Constant.ИсполнительЗадачиПоУмолчанию</constants>
   <constants>Constant.expert1cАдресПортала</constants>
+  <constants>Constant.expert1cМаксНикБота</constants>
+  <constants>Constant.expert1cМаксТокенБота</constants>
+  <constants>Constant.expert1cМаксСекретВебхука</constants>
   <constants>Constant.УчетнаяЗаписьПоддержки</constants>
   <constants>Constant.МаксимальныйРазмерВнешнегоИсходящегоПисьма</constants>
   <constants>Constant.МаксимальныйРазмерФайла</constants>

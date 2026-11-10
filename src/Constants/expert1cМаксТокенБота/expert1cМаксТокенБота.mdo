@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7c66489e-31a4-459a-a8bf-3f4842db3b9c">
+  <producedTypes>
+    <managerType typeId="902994f5-ffce-49ec-8a93-67c3c6e02059" valueTypeId="41a723a1-0db8-48b2-8a99-37cb2fe18d38"/>
+    <valueManagerType typeId="3e831710-f4db-4b3f-8c4e-c54b496ed514" valueTypeId="49450f94-41a5-45a0-ad44-7acb661428af"/>
+    <valueKeyType typeId="4c3a561a-3ed6-4b84-896f-64eb31be6b05" valueTypeId="d30ed1a1-e282-452d-a268-6a4751899380"/>
+  </producedTypes>
+  <name>expert1cМаксТокенБота</name>
+  <synonym>
+    <key>ru</key>
+    <value>Токен бота MAX (секрет, не показывать)</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>300</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

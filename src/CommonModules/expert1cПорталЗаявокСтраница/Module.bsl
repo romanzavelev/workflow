@@ -9,9 +9,9 @@
 //  Строка - HTML-текст страницы
 //
 Функция ТекстСтраницы() Экспорт
-	
+
 	Возврат ЗаголовокИСтили() + ТелоИСкрипт();
-	
+
 КонецФункции
 
 #КонецОбласти
@@ -19,7 +19,7 @@
 #Область СлужебныеПроцедурыИФункции
 
 Функция ЗаголовокИСтили()
-	
+
 	Текст =
 	"<!DOCTYPE html>
 	|<html lang='ru'>
@@ -63,13 +63,13 @@
 	|.muted{color:#5b6775}
 	|[hidden]{display:none!important}
 	|</style>";
-	
+
 	Возврат Текст;
-	
+
 КонецФункции
 
 Функция ТелоИСкрипт()
-	
+
 	Текст =
 	"</head>
 	|<body>
@@ -90,7 +90,29 @@
 	|<p class='muted'>Мы отправим на этот адрес письмо со ссылкой. По ней вы подтвердите почту и зададите пароль.</p>
 	|<div class='row'><button type='submit'>Зарегистрироваться</button></div>
 	|</form>
+	|<div class='row'><button type='button' class='sec' id='b-max'>Войти через MAX</button></div>
 	|<div id='m-auth'></div>
+	|</section>
+	|
+	|<section id='v-max' class='card' hidden>
+	|<h2>Вход через MAX</h2>
+	|<ol>
+	|<li>Откройте бота: <a id='max-link' target='_blank' rel='noopener noreferrer'>открыть в MAX</a></li>
+	|<li>Нажмите в боте «Начать».</li>
+	|<li>Отправьте боту этот код: <b id='max-code' style='font-size:22px;letter-spacing:2px'></b></li>
+	|</ol>
+	|<p class='muted' id='max-wait'>Ожидаем подтверждения. Ссылка действует 10 минут.</p>
+	|<div id='m-max'></div>
+	|<div class='row'><button type='button' class='sec' id='b-max-cancel'>Отмена</button></div>
+	|</section>
+	|
+	|<section id='v-org' class='card' hidden>
+	|<h2>Ваша организация</h2>
+	|<form id='f-org'>
+	|<label for='o-name'>Название вашей организации</label><input id='o-name' autocomplete='organization' required maxlength='150' placeholder='Например: ООО Ромашка'>
+	|<div class='row'><button type='submit'>Продолжить</button></div>
+	|</form>
+	|<div id='m-org'></div>
 	|</section>
 	|
 	|<section id='v-pass' class='card' hidden>
@@ -104,6 +126,10 @@
 	|</section>
 	|
 	|<section id='v-app' hidden>
+	|<div class='card' id='c-max' hidden>
+	|<div class='row' style='margin:0'><span class='muted'>Привяжите MAX: войдёте без пароля и получите уведомления о статусе заявок.</span><button type='button' class='sec' id='b-link'>Привязать MAX</button></div>
+	|</div>
+	|<div id='m-link'></div>
 	|<div class='card'>
 	|<h2>Новая заявка</h2>
 	|<form id='f-new'>
@@ -137,7 +163,7 @@
 	|function $(i){return document.getElementById(i)}
 	|function el(tag,cls,txt){var e=document.createElement(tag);if(cls)e.className=cls;if(txt!==undefined)e.textContent=txt;return e}
 	|function clear(n){while(n.firstChild)n.removeChild(n.firstChild)}
-	|function views(name){['v-auth','v-pass','v-app','v-det'].forEach(function(v){$(v).hidden=(v!==name)});$('btn-out').hidden=!T||name==='v-pass'||name==='v-auth'}
+	|function views(name){['v-auth','v-pass','v-app','v-det','v-max','v-org'].forEach(function(v){$(v).hidden=(v!==name)});$('btn-out').hidden=!T||name==='v-pass'||name==='v-auth'}
 	|function msg(id,text,ok){var n=$(id);clear(n);if(text){n.appendChild(el('div','msg'+(ok?' ok':''),text))}}
 	|function api(method,path,body){
 	| var h={'Content-Type':'application/json'};
@@ -150,7 +176,7 @@
 	|}
 	|function setToken(t,name){T=t;try{if(t)sessionStorage.setItem('pt',t);else sessionStorage.removeItem('pt')}catch(e){}$('who').textContent=t&&name?name:''}
 	|function busy(form,on){var b=form.querySelector('button[type=submit]');if(b)b.disabled=on}
-	|function enter(d){setToken(d.token,d.name);showList()}
+	|function enter(d){setToken(d.token,d.name);if(d.needOrganization){views('v-org')}else{showList()}}
 	|
 	|function showAuth(){views('v-auth')}
 	|$('t-login').onclick=function(){$('t-login').className='on';$('t-reg').className='';$('f-login').hidden=false;$('f-reg').hidden=true;msg('m-auth')};
@@ -172,12 +198,52 @@
 	| api('POST','setpassword',{token:tk,password:$('p1').value}).then(function(r){busy(f,false);
 	|  if(r.ok){history.replaceState(null,'',B);enter(r.data)}else msg('m-pass',r.data.message||'Не удалось сохранить пароль.')})};
 	|
-	|$('btn-out').onclick=function(){setToken(null);showAuth()};
+	|$('btn-out').onclick=function(){stopMax();setToken(null);showAuth()};
+	|
+	|var mx=null;
+	|function stopMax(){if(mx&&mx.timer)clearInterval(mx.timer);mx=null}
+	|function startMax(kind){
+	| stopMax();
+	| var back=kind==='link'?'v-app':'v-auth',errBox=kind==='link'?'m-link':'m-auth';
+	| api('POST',kind==='link'?'max/link':'max/start',{}).then(function(r){
+	|  if(!r.ok){msg(errBox,r.data.message||'Не удалось начать вход через MAX.');return}
+	|  var d=r.data;
+	|  if(typeof d.link!=='string'||d.link.indexOf('https://max.ru/')!==0){msg(errBox,'Некорректный ответ сервера.');return}
+	|  $('max-link').href=d.link;$('max-code').textContent=d.verify;msg('m-max');
+	|  views('v-max');
+	|  mx={kind:kind,started:Date.now()};
+	|  mx.timer=setInterval(function(){
+	|   if(Date.now()-mx.started>600000){stopMax();views(back);msg(errBox,'Время ожидания истекло. Начните заново.');return}
+	|   api('POST','max/poll',{code:d.code,poll:d.poll}).then(function(p){
+	|    if(!mx)return;
+	|    if(!p.ok){stopMax();views(back);msg(errBox,p.data.message||'Вход через MAX не удался.');return}
+	|    if(p.data.status!=='ok')return;
+	|    stopMax();
+	|    if(kind==='link'){views('v-app');loadMe();msg('m-link','MAX привязан.',true)}else{enter(p.data)}
+	|   })
+	|  },2000)
+	| })
+	|}
+	|$('b-max').onclick=function(){startMax('login')};
+	|$('b-link').onclick=function(){startMax('link')};
+	|$('b-max-cancel').onclick=function(){var k=mx&&mx.kind;stopMax();if(k==='link'){views('v-app')}else{views('v-auth')}};
+	|
+	|$('f-org').onsubmit=function(e){e.preventDefault();var f=this;busy(f,true);
+	| api('POST','organization',{organization:$('o-name').value}).then(function(r){busy(f,false);
+	|  if(r.ok){showList()}else msg('m-org',r.data.message||'Не удалось сохранить организацию.')})};
+	|
+	|function loadMe(){
+	| return api('GET','me').then(function(r){
+	|  if(!r.ok)return null;
+	|  $('c-max').hidden=!!r.data.max;
+	|  if(r.data.name)$('who').textContent=r.data.name;
+	|  return r.data})
+	|}
 	|
 	|function statusEl(s,done){var c='st';if(done)c+=' done';else if(s==='Получен ответ')c+=' ans';return el('span',c,s)}
 	|
 	|function showList(){
-	| views('v-app');msg('m-new');
+	| views('v-app');msg('m-new');loadMe();
 	| var box=$('list');clear(box);box.appendChild(el('p','muted','Загрузка...'));
 	| api('GET','requests').then(function(r){clear(box);
 	|  if(!r.ok){box.appendChild(el('div','msg',r.data.message||'Не удалось загрузить заявки.'));return}
@@ -213,15 +279,15 @@
 	|
 	|var q=new URLSearchParams(location.search);
 	|if(q.get('token')){setToken(null);views('v-pass')}
-	|else if(T){showList()}
+	|else if(T){loadMe().then(function(me){if(me&&me.needOrganization){views('v-org')}else if(me){showList()}})}
 	|else{showAuth()}
 	|})();
 	|</script>
 	|</body>
 	|</html>";
-	
+
 	Возврат Текст;
-	
+
 КонецФункции
 
 #КонецОбласти

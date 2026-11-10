@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b690911e-58ee-44d4-a530-fff9fcd4eba1">
+  <producedTypes>
+    <managerType typeId="bc9febad-309c-4685-b212-168b5fffedc6" valueTypeId="de3f8eb2-9a7d-4874-bba4-f98d0de80df9"/>
+    <valueManagerType typeId="71028986-5005-41dd-b03c-ee99007b9e9d" valueTypeId="c9f665f0-78f4-4b6b-bac3-a1a9df8e6d7e"/>
+    <valueKeyType typeId="c71a7eec-a2d9-4342-b6ee-a6326f5db04a" valueTypeId="4cd46efb-bb7d-45dc-a605-55e4fc5b09be"/>
+  </producedTypes>
+  <name>expert1cМаксСекретВебхука</name>
+  <synonym>
+    <key>ru</key>
+    <value>Секрет вебхука MAX (заголовок X-Max-Bot-Api-Secret)</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>100</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>
