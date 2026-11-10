@@ -4442,6 +4442,7 @@
   <constants>Constant.expert1cМаксНикБота</constants>
   <constants>Constant.expert1cМаксТокенБота</constants>
   <constants>Constant.expert1cМаксСекретВебхука</constants>
+  <constants>Constant.expert1cИсключенияАдресовЗаявок</constants>
   <constants>Constant.УчетнаяЗаписьПоддержки</constants>
   <constants>Constant.МаксимальныйРазмерВнешнегоИсходящегоПисьма</constants>
   <constants>Constant.МаксимальныйРазмерФайла</constants>

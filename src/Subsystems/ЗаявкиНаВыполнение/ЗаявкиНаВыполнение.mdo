@@ -31,5 +31,6 @@
   <content>Constant.expert1cМаксНикБота</content>
   <content>Constant.expert1cМаксТокенБота</content>
   <content>Constant.expert1cМаксСекретВебхука</content>
+  <content>Constant.expert1cИсключенияАдресовЗаявок</content>
   <content>HTTPService.expert1cПорталЗаявок</content>
 </mdclass:Subsystem>

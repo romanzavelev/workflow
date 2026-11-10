@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1b11863e-662d-4861-8725-fb65d082da28">
+  <producedTypes>
+    <managerType typeId="296c25f8-cdf9-4536-bc15-b84b874d7a4a" valueTypeId="80796ac2-1d3a-469c-a90b-9e307a332b97"/>
+    <valueManagerType typeId="ef0687c4-95fb-49a6-bc0f-56b7738a4956" valueTypeId="c02b4afc-7b9d-47c7-b604-e80c24eae600"/>
+    <valueKeyType typeId="5a64e7ad-0fb5-42be-937c-67e9e769dd22" valueTypeId="85263e53-9cd6-49bd-805d-70744851643d"/>
+  </producedTypes>
+  <name>expert1cИсключенияАдресовЗаявок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Адреса-исключения для создания заявок по почте (по одному в строке, можно шаблон со *)</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers/>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>
