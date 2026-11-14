@@ -171,6 +171,7 @@
 	| return fetch(B+'api/'+path,{method:method,headers:h,body:body?JSON.stringify(body):undefined}).then(function(r){
 	|  return r.json().catch(function(){return {}}).then(function(d){
 	|   if(r.status===401&&T&&path!=='login'){setToken(null);views('v-auth');msg('m-auth','Сессия истекла. Войдите снова.')}
+	|   if(!r.ok&&!d.message){d.message='Сервер ответил ошибкой (HTTP '+r.status+') без описания. Покажите это сообщение разработчику.'}
 	|   return {ok:r.ok,status:r.status,data:d}})
 	| },function(){return {ok:false,status:0,data:{message:'Нет связи с сервером. Повторите позже.'}}})
 	|}
