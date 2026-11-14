@@ -6,7 +6,7 @@
     <value>Портал заявок</value>
   </synonym>
   <rootURL>portal</rootURL>
-  <reuseSessions>DontUse</reuseSessions>
+  <reuseSessions>Use</reuseSessions>
   <sessionMaxAge>20</sessionMaxAge>
   <urlTemplates uuid="0a102276-90cf-44d3-b90d-0167fb7b69b4">
     <name>Страница</name>
