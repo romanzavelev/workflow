@@ -14,7 +14,7 @@
       <key>ru</key>
       <value>Страница портала</value>
     </synonym>
-    <template>/</template>
+    <template>/index</template>
     <methods uuid="710d01f1-6f84-40b1-9980-579863b0a41a">
       <name>GET</name>
       <synonym>

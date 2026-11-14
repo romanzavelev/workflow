@@ -157,7 +157,7 @@
 	|</main>
 	|<script>
 	|(function(){
-	|var B=location.pathname.replace(/\/?$/,'/');
+	|var B=location.pathname.replace(/index\/?$/,'').replace(/\/?$/,'/');
 	|var T=null;
 	|try{T=sessionStorage.getItem('pt')}catch(e){}
 	|function $(i){return document.getElementById(i)}
@@ -196,7 +196,7 @@
 	| busy(f,true);
 	| var tk=new URLSearchParams(location.search).get('token')||'';
 	| api('POST','setpassword',{token:tk,password:$('p1').value}).then(function(r){busy(f,false);
-	|  if(r.ok){history.replaceState(null,'',B);enter(r.data)}else msg('m-pass',r.data.message||'Не удалось сохранить пароль.')})};
+	|  if(r.ok){history.replaceState(null,'',B+'index');enter(r.data)}else msg('m-pass',r.data.message||'Не удалось сохранить пароль.')})};
 	|
 	|$('btn-out').onclick=function(){stopMax();setToken(null);showAuth()};
 	|
